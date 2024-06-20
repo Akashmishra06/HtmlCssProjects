@@ -1,0 +1,21 @@
+.rt-1{
+    font-family: Roboto;
+    font-weight: 650;
+    font-size: 50px;
+    margin-bottom: 0;
+    
+}
+
+
+.rt-2{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: large;
+
+
+}
+span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    
+}

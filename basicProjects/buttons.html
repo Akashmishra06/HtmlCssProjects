@@ -1,248 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Buttons</title>
-    <style>
-        .SUBSCRIBE-BUTTON {
-            background-color: rgb(159, 3, 3);
-            color: white;
-            border: none;
-            height: 47px;
-            width: 140px;
-            border-radius: 2px;
-            font-size: large;
-            cursor: pointer;
-            margin: 5px;
-            margin-left: 150px;
-            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        .SUBSCRIBE-BUTTON:hover {
-            background-color: rgb(162, 80, 80);
-            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.4);
-
-        }
-
-        .JOIN-BUTTON {
-            background-color: white;
-            height: 47px;
-            width: 80px;
-            border-color: blue;
-            border-width: 0.4px;
-            color: blue;
-            border-radius: 2px;
-            font-size: large;
-            margin: 5px;
-            cursor: pointer;
-            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        .JOIN-BUTTON:hover {
-            background-color: rgb(194, 189, 189);
-            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.4);
-
-        }
-
-        .Tweet-BUTTON {
-            background-color: rgb(0, 136, 255);
-            height: 47px;
-            width: 110px;
-            border-radius: 25px;
-            color: white;
-            font-size: large;
-            cursor: pointer;
-            margin: 5px;
-            border: none;
-            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        .Tweet-BUTTON:hover {
-            background-color: rgb(202, 167, 167);
-            color: blue;
-            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.4);
-
-        }
-
-        .Request-now-BUTTON {
-            background-color: black;
-            color: white;
-            height: 47px;
-            width: 130px;
-            border: none;
-            font-size: medium;
-            cursor: pointer;
-            margin: 5px;
-            margin-left: 150px;
-            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-
-        }
-
-        .Request-now-BUTTON:hover {
-            background-color: brown;
-            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.4);
-
-
-        }
-
-        .Add-to-cart-BUTTON {
-            background-color: rgb(222, 222, 58);
-            color: black;
-            height: 47px;
-            width: 200px;
-            border-radius: 25px;
-            border: none;
-            font-size: larger;
-            cursor: pointer;
-            margin: 5px;
-            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-
-        }
-
-        .Add-to-cart-BUTTON:hover {
-            background-color: rgb(27, 108, 108);
-            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.4);
-
-
-        }
-
-        .Sign-up-BUTTON {
-            background-color: rgb(39, 135, 39);
-            color: white;
-            height: 47px;
-            width: 120px;
-            border: none;
-            font-size: larger;
-            cursor: pointer;
-            margin: 5px;
-            border-radius: 7px;
-            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-
-        }
-
-        .Sign-up-BUTTON:hover {
-            background-color: rgb(74, 93, 36);
-            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.4);
-    
-
-        }
-
-
-
-        .Get-started-BUTTON{
-            background-color: rgb(116, 76, 177);
-            height: 47px;
-            width: 140px;
-            margin-left: 150px;
-            border-radius: 4px;
-            border: none;
-            color: white;
-            font-size: larger;
-            margin-right: 10px;
-            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-
-
-
-        }
-
-        .Get-started-BUTTON:hover{
-            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.4);
-
-        }
-
-
-        .Download-BUTTON{
-            background-color: rgb(214, 228, 240);
-            height: 47px;
-            width: 160px;
-            border-width: 1px;
-            font-size: x-large;
-            border-radius: 3px;
-            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-
-
-        }
-        .Download-BUTTON:hover{
-            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.4);
-
-        }
-
-
-        .Apply-on-company-website-BUTTON{
-            background-color: rgb(10, 102, 194);
-            height: 47px;
-            width: 250px;
-            color: white;
-            border-radius: 25px;
-            border: none;
-            font-size: medium;
-            font-weight: 500;
-            margin-right: 10px;
-            margin-left: 150px;
-            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-
-
-
-        }
-
-
-        .Apply-on-company-website-BUTTON:hover{
-            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.4);
-
-        }
-
-        .Save-BUTTON{
-            background-color: whitesmoke;
-            height: 47px;
-            width: 120px;
-            color: blue;
-            font-weight: 600;
-            font-size: larger;
-            border-radius: 25px;
-            border-color: blue;
-            border-width: 1px;
-            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-
-            
-        }
-
-        .Save-BUTTON:hover{
-            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.4);
-
-        }
-
-    </style>
+    <link rel="stylesheet" href="style/buttons.css">
 </head>
+
 <body>
     <div>
-        
         <h1><i>buttons:-</i></h1>
         <button class="SUBSCRIBE-BUTTON">SUBSCRIBE</button>
         <button class="JOIN-BUTTON">JOIN</button>
         <button class="Tweet-BUTTON">Tweet</button>
-
     </div>
 
+    <br><br>
+    <hr>
+    <br>
 
-    <br><br><hr><br>
-
-    <div>    
+    <div>
         <h1><i>Ex: 2a:-</i></h1>
         <button class="Request-now-BUTTON">Request now</button>
         <button class="Add-to-cart-BUTTON">Add to Cart</button>
         <button class="Sign-up-BUTTON">Sign up</button>
     </div>
 
-    <br><br><hr><br>
+    <br><br>
+    <hr>
+    <br>
 
-    <h1><i>Ex: 2b:-</i></h1>
-    <button class="Get-started-BUTTON">Get started</button>
-    <button class="Download-BUTTON">Download</button>
+    <div>
+        <h1><i>Ex: 2b:-</i></h1>
+        <button class="Get-started-BUTTON">Get started</button>
+        <button class="Download-BUTTON">Download</button>
+    </div>
 
-    <br><br><hr><br>
+    <br><br>
+    <hr>
+    <br>
 
-    <h1><i>Ex: 2c:-</i></h1>
-    <button class="Apply-on-company-website-BUTTON">Apply on company website</button>
-    <button class="Save-BUTTON">Save</button>
+    <div>
+        <h1><i>Ex: 2c:-</i></h1>
+        <button class="Apply-on-company-website-BUTTON">Apply on company website</button>
+        <button class="Save-BUTTON">Save</button>
+    </div>
 
+    <br><br>
+    <hr>
+    <br>
+
+    <div class="Amazon">
+        <p class="Amazon-para1">
+            Back to Amazon
+        </p>
+
+        <p class="Amazon-para2">Nike Black Running shoes</p>
+
+        <p class="Amazon-para3">&#36;39 - in stock.</p>
+
+        <p class="Amazon-para4">Free delivery tomorrow.</p>
+
+        <button class="Add-to-cart-BUTTON">Add to Cart</button>
+        <button class="Add-to-cart-BUTTON">Buy now</button>
+    </div>
 </body>
+
 </html>
