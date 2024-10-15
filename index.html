@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            height: 100px;
+            width: 100px;
+            border: none;
+
+        }
+
+        body{
+            padding: 300px;
+            background-color: black;
+        }
+
+        #red{
+            background-color: red;
+        }
+
+        #blue{
+            background-color: blue;
+        }
+
+        #green{
+            background-color: green;
+        }
+
+        #yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div>
+        <button class="btn" id="red"></button>
+        <button class="btn" id="blue"></button>
+        <button class="btn" id="green"></button>
+        <button class="btn" id="yellow"></button>
+        <button class="time" id="time"></button>
+    </div>
+
+
+
+    <script>
+        document.getElementById("red").addEventListener("click", function(){
+            document.body.style.backgroundColor = "red"
+        })
+        document.getElementById("blue").addEventListener("click", function(){
+            document.body.style.backgroundColor = "blue"
+        })
+        document.getElementById("green").addEventListener("click", function(){
+            document.body.style.backgroundColor = "green"
+        })
+        document.getElementById("yellow").addEventListener("click", function(){
+            document.body.style.backgroundColor = "yellow"
+        })
+
+        function Updatetime(){
+            const time = new Date()
+            document.getElementById("time").innerText = time.toLocaleTimeString()
+
+        }
+
+        Updatetime()
+        setInterval(Updatetime, 1000)
+    </script>
+</body>
+</html>
